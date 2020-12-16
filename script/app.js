@@ -122,23 +122,6 @@ function containNumber(string) {
     else return false;
 }
 
-// function rectangleWidth(data){
-//     let width = "100%";
-//     switch (data) {
-//         case "1/3 shot":
-//             width = "33%";
-//             break;
-//         case "1 shot":
-//             width = "100%";
-//             break;
-//         case "Juice of 1/2":
-//             width = "50%";
-//             break;
-
-//         default:
-//             break;
-//     }
-// }
 
 
 let showResult = (data) => {
@@ -303,7 +286,6 @@ document.addEventListener('DOMContentLoaded', function () {
         getCocktailAPI();
     }
     if (page.intro) {
-        // console.log(form.email.input);
         enableListeners();
     }
 });
