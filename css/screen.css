@@ -10,7 +10,9 @@
     --g-color-neutral-xx-light:rgb(233, 233, 233);
     --g-color-neutral-x-light:rgb(206, 206, 206);
     --g-color-neutral-light:rgb(169, 168, 168);
-    --g-color-neutral:1;
+    --g-color-neutral:rgb(133, 133, 133);;
+    --g-color-neutral-dark:rgb(109, 109, 109);
+    --g-color-neutral-x-dark:rgb(80, 80, 80);
     --g-color-neutral-xx-dark:rgb(53, 53, 53);
     --g-color-neutral-xxx-dark:rgb(40, 40, 40);
     --g-color-neutral-xxx-dark:rgb(21, 21, 21);
@@ -37,7 +39,7 @@
     --g-whitespace-lg: calc(var(--g-baseline) * 4); /*  = 32px */
     --g-whitespace-xl: calc(var(--g-whitespace) * 2); /*  = 48px */
     --g-whitespace-xxl: calc(var(--g-whitespace) * 3); /*  = 72px */
-    --g-whitespace-xxl: calc(var(--g-whitespace) * 4); /*  = 96px */
+    --g-whitespace-xxxl: calc(var(--g-whitespace) * 4); /*  = 96px */
 
     /* Media sizes */
     --g-media-size-sm:36rem; 
@@ -54,18 +56,18 @@
 
 }
 
-/* *::-webkit-scrollbar,
+*::-webkit-scrollbar,
 *::-webkit-scrollbar-thumb {
-  width: 26px;
+  width: 16px;
   border-radius: 13px;
   background-clip: padding-box;
-  border: 10px solid transparent;
+  border: 5px solid transparent;
   margin:0
 }
 
 *::-webkit-scrollbar-thumb {        
   box-shadow: inset 0 0 0 10px rgba(0,0,0,0.2);
-} */
+}
 
 /* #generic */
 
@@ -95,13 +97,13 @@ html {
 
 ::-moz-selection {
     background: var(--g-selection-backgroundColor);
-    color: white;
+    color: var(--g-color-neutral-xxxx-light);
     text-shadow: none;
 }
 
 ::selection {
     background: var(--g-selection-backgroundColor);
-    color: white;
+    color: var(--g-color-neutral-xxxx-light);
     text-shadow: none;
 }
 
@@ -411,7 +413,7 @@ Is a <length> representing the z component of the translating vector. It can't b
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 36rem) {
     .c-header__title{
         font-size:2rem;
         line-height: 1.5;
@@ -993,15 +995,15 @@ Is a <length> representing the z component of the translating vector. It can't b
 }
 
 .u-max-width-sm {
-    max-width: 39em !important;
+    max-width: 39rem !important;
 }
 
 .u-max-width-md {
-    max-width: 50em !important;
+    max-width: 50rem !important;
 }
 
 .u-max-width-lg {
-    max-width: 63.5em !important;
+    max-width: 63.5rem !important;
 }
 
 .u-max-width-none {
